@@ -1,0 +1,84 @@
+/* Global Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://media.istockphoto.com/id/1287065554/photo/sound-wave.jpg?b=1&s=612x612&w=0&k=20&c=Qbk-qBg1-MueQrxyI1QlNM8SaXsYTv5wS5o46dSqAZU=') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Title Animation */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    animation: titleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 50px cyan; }
+}
+
+/* Album Container */
+.album-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.album-card {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(0);
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
+.album-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.album-card p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 20px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Album Hover Effect */
+.album-card:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.9);
+}
+
+/* Music Player Styling */
+.music-player {
+    margin-top: 50px;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    outline: none;
+}
