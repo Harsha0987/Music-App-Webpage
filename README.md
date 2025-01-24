@@ -10,10 +10,6 @@ A stylish and professional **Music App Webpage** built using **HTML, CSS, and Ja
 - 🎶 **Album Cards:** Interactive album cards with 3D flip and hover effects.  
 - 🎼 **Audio Player:** Custom-styled audio player for a seamless listening experience.  
 
----
-
-## 📸 Preview
-![Music App Preview](https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg?auto=compress&cs=tinysrgb&w=600)
 
 ---
 
